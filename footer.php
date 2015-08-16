@@ -27,13 +27,6 @@
 
                 var $button = $("").click(function(){
                     var index =  $('.bs-component').index( $(this).parent() );
-                    //$.get(window.location.href, function(data){
-                    //    var html = $(data).find('.bs-component').eq(index).html();
-                    //    html = cleanSource(html);
-                    //    $("#source-modal pre").text(html);
-                    //    $("#source-modal").modal();
-                    //})
-
                 });
 
                 $('.bs-component [data-toggle="popover"]').popover();
@@ -46,19 +39,17 @@
                     $button.hide();
                 });
 
-                $(".icons-material .icon").each(function() {
+/*                $(".icons-material .icon").each(function() {
                     $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
-                });
+                });*/
 
             })();});
 
         </script>
         <script>
-            jQuery(document).ready(function() {
-                // This command is used to initialize some elements and make them work properly
-                jQuery.material.init();
+            $(document).ready(function() {
+                $.material.init();
             });
         </script>
-
 </body>
 </html>

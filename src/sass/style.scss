@@ -1,14 +1,14 @@
 /*!
 Theme Name: Material Boot
 Theme URI: http://underscores.me/
-Author: jb
-Author URI: http://jb
-Description: dfsd
+Author: jbradach
+Author URI: https://jamesbradach.com/
+Description: Material Design for Bootstrap in a WordPress theme.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: materialboot
-Tags:
+Tags: MaterialDesign, Bootstrap
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
@@ -16,14 +16,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Material Boot is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
-Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
 # Typography
 # Elements
 # Forms
@@ -47,34 +44,29 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins/mixins-master";
 
 /*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-/* @import "normalize"; */
-
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-@import "typography/typography";
+/* @import "typography/typography"; */
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
-@import "elements/elements";
+ @import "elements/elements"; 
 
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-@import "forms/forms";
+/* @import "forms/forms"; */
 
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+/*@import "navigation/navigation"; */
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
-@import "modules/accessibility";
+ @import "modules/accessibility";
 
 /*--------------------------------------------------------------
 # Alignments

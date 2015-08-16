@@ -25,7 +25,7 @@ function materialboot_setup() {
 	load_theme_textdomain( 'materialboot', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
-	add_theme_support( 'automatic-feed-links' );
+//	add_theme_support( 'automatic-feed-links' );
 
 	/*
 	 * Let WordPress manage the document title.
@@ -101,7 +101,7 @@ function materialboot_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'materialboot' ),
 		'id'            => 'sidebar-1',
-		'description'   => '',
+//		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -113,19 +113,34 @@ add_action( 'widgets_init', 'materialboot_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+//Making jQuery to load from Google Library
+function replace_jquery() {
+	if (!is_admin()) {
+		// comment out the next two lines to load the local copy of jQuery
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', array(), '2.1.4', true  );
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'replace_jquery');
+/* <script>window.jQuery || document.write('<script src="//scripts/jquery.min.js"></script>')</script>*/
+
 function materialboot_scripts() {
+  wp_enqueue_style( 'materialboot-vendor', get_template_directory_uri() . '/styles/vendor.css', array(), '1.0.0' );
 	wp_enqueue_style( 'materialboot-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'materialboot-navigation', get_template_directory_uri() . '/scripts/navigation.js', array(), '20120206', true );
+//	wp_enqueue_script( 'materialboot-navigation', get_template_directory_uri() . '/scripts/navigation.js', array(), '20120206', true );
 
-	wp_enqueue_script( 'materialboot-skip-link-focus-fix', get_template_directory_uri() . '/scripts/skip-link-focus-fix.js', array(), '20130115', true );
+//	wp_enqueue_script( 'materialboot-skip-link-focus-fix', get_template_directory_uri() . '/scripts/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-  wp_enqueue_script( 'materialboot-app', get_template_directory_uri() . '/scripts/app.js', array(), false, true );
+  wp_enqueue_script( 'materialboot-app', get_template_directory_uri() . '/scripts/app.min.js', array('jquery'), false, true );
 }
 add_action( 'wp_enqueue_scripts', 'materialboot_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -148,6 +163,11 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
+ * Bootstrap navwalker.s.
+ */
+
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+/**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/jetpack.php';
+//require get_template_directory() . '/inc/jetpack.php';
