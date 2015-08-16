@@ -1,0 +1,22 @@
+{
+  "name": "materialboot",
+  "version": "1.0.0",
+  "description": "WordPress theme using Material Design for Bootstrap.",
+  "authors": [
+    "James Bradach"
+  ],
+  "license": "MIT",
+  "homepage": "https://jamesbradach.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "index.php",
+  "dependencies": {
+    "components-bootstrap": "~3.3.5",
+    "bootstrap-material-design": "~0.3.0"
+  }
+}
