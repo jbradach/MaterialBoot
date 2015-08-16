@@ -11,7 +11,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
 ?>
-
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+<div class="col-md-4 well well-sm">
+  <div id="secondary" class="widget-area" role="complementary">
+  	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+  </div><!-- #secondary -->
+</div>

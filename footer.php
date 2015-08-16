@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-
+<div class="container-fluid">
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'materialboot' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'materialboot' ), 'WordPress' ); ?></a>
@@ -20,8 +20,21 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'materialboot' ), 'materialboot', '<a href="https://jamesbradach.com" rel="designer">James Bradach</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+</div>
 </div><!-- #page -->
 <?php wp_footer(); ?>
+<script>
+$(document).ready(function() {
+
+	// Bootstrap menus open on hover
+	$('ul.nav li.dropdown').hover(function() {
+		$('.dropdown-menu', this).fadeIn();
+	}, function() {
+		$('.dropdown-menu', this).fadeOut('fast');
+	}); // hover
+
+});
+</script>
 <script>
             jQuery(function($){(function(){
 

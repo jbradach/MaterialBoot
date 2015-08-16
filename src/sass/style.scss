@@ -46,12 +46,12 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-/* @import "typography/typography"; */
+/*@import "typography/typography";*/
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
- @import "elements/elements"; 
+@import "elements/elements";
 
 /*--------------------------------------------------------------
 # Forms
@@ -61,7 +61,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-/*@import "navigation/navigation"; */
+@import "navigation/navigation";
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -81,7 +81,7 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+/*@import "site/secondary/widgets";*/
 
 /*--------------------------------------------------------------
 # Content
