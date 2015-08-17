@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/jbradach/materialboot.svg?branch=master)](https://travis-ci.org/jbradach/materialboot)
-
 Material Boot
 =============
 
@@ -8,8 +6,8 @@ WordPress theme using Material Design for Bootstrap based on Automatic's [_s the
 To Do
 -----
 
-* Split app.js into two for enqueueing purposes.
-* Potentially split style.css.
+* ~~Split app.js into two for enqueueing purposes.~~
+* ~~Potentially split style.css.~~
 * Apply basic Bootstrap formatting.
 * Color preferences.
 
