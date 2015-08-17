@@ -127,7 +127,7 @@ add_action('init', 'replace_jquery');
 /* <script>window.jQuery || document.write('<script src="//scripts/jquery.min.js"></script>')</script>*/
 
 function materialboot_scripts() {
-  wp_enqueue_style( 'materialboot-vendor', get_template_directory_uri() . '/styles/vendor.css', array(), '1.0.0' );
+  wp_enqueue_style( 'materialboot-vendor', get_template_directory_uri() . '/styles/vendor.min.css', array(), '1.0.0' );
 	wp_enqueue_style( 'materialboot-style', get_stylesheet_uri() );
 
 //	wp_enqueue_script( 'materialboot-navigation', get_template_directory_uri() . '/scripts/navigation.js', array(), '20120206', true );
