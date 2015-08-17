@@ -19,4 +19,5 @@ Notes from _s README.md:
 * Some small tweaks in `inc/extras.php` that can improve your theming experience.
 * A script at `js/navigation.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
 * 2 sample CSS layouts in `layouts/` for a sidebar on either side of your content.
-* Licensed under GPLv2 or later.
+
+License: GPLv2 or later http://www.gnu.org/licenses/gpl-2.0.html
