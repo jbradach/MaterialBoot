@@ -74,7 +74,7 @@ gulp.task('scripts', function() {
 
 
 gulp.task('sass', function(){
-  return gulp.src('src/sass/style.scss')
+  return gulp.src('src/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
