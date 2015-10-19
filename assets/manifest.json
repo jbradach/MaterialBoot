@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/material.js",
+        "scripts/ripples.js",
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+       "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "material.css": { 
+           "files": [
+         "styles/material.less"
+      ] 
+    },
+    "jquery.js": {
+        "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://example.dev"
+  }
+}
