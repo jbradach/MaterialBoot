@@ -1,4 +1,4 @@
-<div class="navbar navbar-material-green-900">
+<div class="navbar navbar-material-green-900 shadow-z-2">
  <div class="container">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">

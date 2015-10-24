@@ -20,11 +20,11 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="container" role="document">
       <div class="content wrap row">
-        <main class="main">
+        <main class="main panel panel-default">
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>
-          <aside class="sidebar"><div class="panel panel-info"><div class="container">
+          <aside class="sidebar"><div class="panel panel-info"><div class="container-fluid">
             <?php include Wrapper\sidebar_path(); ?></div>
           </aside><!-- /.sidebar -->
         <?php endif; ?>

@@ -1,0 +1,19 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+/*  height: 50px;*/
+  background-color: #555;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:focus,
+.footer a:hover {
+  color: #cddc39;
+  text-decoration: none;
+}
+.footer ul .menu-item{
+    display: inline-block;
+    padding: 0 10px;
+}
